@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4b0082, #8a2be2, #d8bfd8);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+header {
+  width: 100%;
+  background-color: rgba(75, 0, 130, 0.9);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  color: #e0b0ff;
+}
+
+/* Menu */
+nav {
+  width: 100%;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 30px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  background-color: rgba(138, 43, 226, 0.6);
+  display: inline-block;
+}
+
+nav ul.menu li a:hover,
+nav ul.menu li a.active {
+  background-color: #e0b0ff;
+  color: #4b0082;
+  transform: scale(1.05);
+}
+
+/* Imagem principal */
+.main-image {
+  display: block;
+  margin: 50px auto 0 auto;
+  max-width: 30%;
+  height: auto;
+  border: 5px solid #dda0dd;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul.menu {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  nav ul.menu li a {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .main-image {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  nav ul.menu li a {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    width: 90%;
+  }
+
+  .main-image {
+    max-width: 95%;
+    margin-top: 20px;
+  }
+}
+nav ul.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre logo e texto */
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  background-color: rgba(138, 43, 226, 0.6);
+}
+
+/* Ajuste para o tamanho dos ícones */
+nav ul.menu li a img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}

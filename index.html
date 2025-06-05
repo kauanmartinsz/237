@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>237</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>237</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="page1.html">Página 1</a></li>
+        <li><a href="page2.html">Página 2</a></li>
+        <li><a href="page3.html">Página 3</a></li>
+        <li><a href="page4.html">Página 4</a></li>
+        <li><a href="page5.html">Página 5</a></li>
+        <li><a href="bonus.html">Página Bônus</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="WhatsApp Image 2025-06-04 at 15.45.03.jpeg" alt="Imagem especial" class="main-image" />
+  </main>
+
+  <!-- Script para sempre voltar ao topo ao recarregar -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  </script>
+</body>
+</html>
